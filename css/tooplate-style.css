@@ -705,9 +705,14 @@ footer p {
   Mobile Responsive styles              
 -----------------------------------------*/
 
+/*---------------------------------------
+  Mobile Responsive Styles              
+-----------------------------------------*/
+
+/* Tablet screens (<= 980px) */
 @media (max-width: 980px) {
     #home {
-        height: 55vh;
+        height: 55vh;  /* Adjusting the height of the home section */
     }
     .service-thumb {
         margin-top: 12px;
@@ -718,54 +723,82 @@ footer p {
     }
 }
 
+/* Tablets to small screens (<= 768px) */
 @media (max-width: 768px) {
     #home {
-        height: 85vh;
+        height: 85vh;  /* Adjusting home section height on tablets */
+    }
+    .portfolio-items > li {
+        width: 100%;  /* Full-width portfolio items */
+    }
+    .main-content {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .about-btns > .btn-custom {
+        margin-bottom: 10px;
+    }
+    .intro-text > .intro-btns > .btn-custom {
+        margin-bottom: 10px;
+    }
+    .intro-text > h1 {
+        font-size: 62px;  /* Adjusting header size */
     }
 }
 
+/* Small mobile screens (<= 580px) */
 @media (max-width: 580px) {
     h1 {
-        font-size: 29px;
+        font-size: 29px;  /* Adjust header font size */
     }
     h2 {
-        font-size: 23px;
+        font-size: 23px;  /* Adjust subheader font size */
     }
     #home {
-        height: 95vh;
+        height: 95vh;  /* Slightly bigger height on small screens */
     }
     .contact-info {
         margin-top: 42px;
     }
 }
 
-@media (max-width: 320px) {
+/* Very small mobile screens (<= 400px) */
+@media (max-width: 400px) {
     #home {
-        height: 125vh;
+        height: 125vh;  /* Further increase height to ensure space */
+    }
+    .section {
+        padding-top: 40px;  /* Padding adjustments for small screens */
+    }
+    .section-block {
+        padding: 40px;
+        padding-top: 0;
     }
 }
 
-@media(max-width:992px) {
+/* Other adjustments (max-width: 992px) */
+@media (max-width: 992px) {
     .info-list {
         margin-bottom: 25px;
     }
-    .p-table,
-    .service {
+    .p-table, .service {
         margin-bottom: 25px;
     }
     .skills-block .skill {
         margin-bottom: 40px;
     }
-    div:last-of-type>.p-table,
-    div:last-of-type>.skill:last-of-type,
-    div:last-of-type>.servic {
+    div:last-of-type > .p-table,
+    div:last-of-type > .skill:last-of-type,
+    div:last-of-type > .servic {
         margin-bottom: 0;
     }
-    .portfolio-items>li {
-        width: 50%;
+    .portfolio-items > li {
+        width: 50%;  /* Portfolio items on medium screens */
     }
     .section {
-        padding-top: 90px;
+        padding-top: 90px;  /* Adjust padding */
     }
     .section-block {
         padding: 90px;
@@ -776,43 +809,13 @@ footer p {
     }
 }
 
-@media(max-width:768px) {
-    .portfolio-items>li {
-        width: 100%;
-    }
-    .main-content {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .about-btns>.btn-custom {
-        margin-bottom: 10px;
-    }
-    .intro-text>.intro-btns>.btn-custom {
-        margin-bottom: 10px;
-    }
-    .intro-text>h1 {
-        font-size: 62px;
-    }
-}
-
-@media(max-width:550px) {
+/* Very small mobile screens (<= 550px) */
+@media (max-width: 550px) {
     .section {
-        padding-top: 70px;
+        padding-top: 70px;  /* Padding adjustments for small screens */
     }
     .section-block {
         padding: 70px;
-        padding-top: 0;
-    }
-}
-
-@media(max-width:400px) {
-    .section {
-        padding-top: 40px;
-    }
-    .section-block {
-        padding: 40px;
         padding-top: 0;
     }
 }
