@@ -234,7 +234,7 @@ footer {
   Home section              
 -----------------------------------------*/
 
-#home {
+/* #home {
   
     background: url('../images/3.png') 50% 0 no-repeat;
     background-size: cover; 
@@ -244,7 +244,7 @@ footer {
     height: 100vh;
     position: relative;
     text-align: right;
-}
+} */
 
 
 /*---------------------------------------
@@ -699,118 +699,47 @@ footer p {
 /*---------------------------------------
   Mobile Responsive Styles              
 -----------------------------------------*/
+#home {
+    background: url('../images/3.png') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: right;
+}
 
-/* Tablet screens (<= 980px) */
-@media (max-width: 980px) {
+/* Large screens and desktops */
+@media (min-width: 1200px) {
     #home {
-        height: 55vh;  
-    }
-    .service-thumb {
-        margin-top: 12px;
-        margin-bottom: 22px;
-    }
-    .contact-info {
-        margin-top: 22px;
+        background-size: cover;
     }
 }
 
-/* Tablets to small screens (<= 768px) */
-@media (max-width: 768px) {
+/* Tablets and smaller desktops */
+@media (min-width: 768px) and (max-width: 1199px) {
     #home {
-        height: 85vh;  
-        background-attachment: scroll; 
-    }
-    .portfolio-items > li {
-        width: 100%;  
-    }
-    .main-content {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .about-btns > .btn-custom {
-        margin-bottom: 10px;
-    }
-    .intro-text > .intro-btns > .btn-custom {
-        margin-bottom: 10px;
-    }
-    .intro-text > h1 {
-        font-size: 62px;  
+        background-size: cover;
+        height: 80vh;
     }
 }
 
-/* Small mobile screens (<= 580px) */
-@media (max-width: 580px) {
-    h1 {
-        font-size: 29px;  
-    }
-    h2 {
-        font-size: 23px;  
-    }
+/* Smaller tablets */
+@media (min-width: 576px) and (max-width: 767px) {
     #home {
-        height: 95vh; 
-        background-attachment: scroll; 
-    }
-    .contact-info {
-        margin-top: 42px;
+        background-size: contain;
+        background-position: center;
+        height: auto;
+        min-height: 70vh;
     }
 }
 
-/* Very small mobile screens (<= 400px) */
-@media (max-width: 400px) {
+/* Mobile devices */
+@media (max-width: 575px) {
     #home {
-        height: 125vh; 
-        background-attachment: scroll; 
-        
-    }
-    .section {
-        padding-top: 40px;  
-    }
-    .section-block {
-        padding: 40px;
-        padding-top: 0;
-    }
-}
-
-/* Other adjustments (max-width: 992px) */
-@media (max-width: 992px) {
-    .info-list {
-        margin-bottom: 25px;
-    }
-    .p-table, .service {
-        margin-bottom: 25px;
-    }
-    .skills-block .skill {
-        margin-bottom: 40px;
-    }
-    div:last-of-type > .p-table,
-    div:last-of-type > .skill:last-of-type,
-    div:last-of-type > .servic {
-        margin-bottom: 0;
-    }
-    .portfolio-items > li {
-        width: 50%;  
-    }
-    .section {
-        padding-top: 90px;  
-    }
-    .section-block {
-        padding: 90px;
-        padding-top: 0;
-    }
-    .contact-info-icons {
-        margin-top: 60px;
-    }
-}
-
-/* Very small mobile screens (<= 550px) */
-@media (max-width: 550px) {
-    .section {
-        padding-top: 70px;  
-    }
-    .section-block {
-        padding: 70px;
-        padding-top: 0;
+        background-size: contain;
+        background-position: center;
+        height: auto;
+        min-height: 60vh;
     }
 }
