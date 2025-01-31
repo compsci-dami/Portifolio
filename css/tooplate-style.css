@@ -235,16 +235,11 @@ footer {
 -----------------------------------------*/
 
 #home {
-    background: url('../images/3.png') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+  
+    background: url('../images/3.png') 50% 0 no-repeat;
+    background-size: cover; 
+    background-position: center center; 
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     height: 100vh;
     position: relative;
@@ -702,17 +697,13 @@ footer p {
 }
 
 /*---------------------------------------
-  Mobile Responsive styles              
------------------------------------------*/
-
-/*---------------------------------------
   Mobile Responsive Styles              
 -----------------------------------------*/
 
 /* Tablet screens (<= 980px) */
 @media (max-width: 980px) {
     #home {
-        height: 55vh;  /* Adjusting the height of the home section */
+        height: 55vh;  
     }
     .service-thumb {
         margin-top: 12px;
@@ -726,10 +717,11 @@ footer p {
 /* Tablets to small screens (<= 768px) */
 @media (max-width: 768px) {
     #home {
-        height: 85vh;  /* Adjusting home section height on tablets */
+        height: 85vh;  
+        background-attachment: scroll; 
     }
     .portfolio-items > li {
-        width: 100%;  /* Full-width portfolio items */
+        width: 100%;  
     }
     .main-content {
         top: 0;
@@ -744,20 +736,21 @@ footer p {
         margin-bottom: 10px;
     }
     .intro-text > h1 {
-        font-size: 62px;  /* Adjusting header size */
+        font-size: 62px;  
     }
 }
 
 /* Small mobile screens (<= 580px) */
 @media (max-width: 580px) {
     h1 {
-        font-size: 29px;  /* Adjust header font size */
+        font-size: 29px;  
     }
     h2 {
-        font-size: 23px;  /* Adjust subheader font size */
+        font-size: 23px;  
     }
     #home {
-        height: 95vh;  /* Slightly bigger height on small screens */
+        height: 95vh; 
+        background-attachment: scroll; 
     }
     .contact-info {
         margin-top: 42px;
@@ -767,10 +760,12 @@ footer p {
 /* Very small mobile screens (<= 400px) */
 @media (max-width: 400px) {
     #home {
-        height: 125vh;  /* Further increase height to ensure space */
+        height: 125vh; 
+        background-attachment: scroll; 
+        
     }
     .section {
-        padding-top: 40px;  /* Padding adjustments for small screens */
+        padding-top: 40px;  
     }
     .section-block {
         padding: 40px;
@@ -795,10 +790,10 @@ footer p {
         margin-bottom: 0;
     }
     .portfolio-items > li {
-        width: 50%;  /* Portfolio items on medium screens */
+        width: 50%;  
     }
     .section {
-        padding-top: 90px;  /* Adjust padding */
+        padding-top: 90px;  
     }
     .section-block {
         padding: 90px;
@@ -812,7 +807,7 @@ footer p {
 /* Very small mobile screens (<= 550px) */
 @media (max-width: 550px) {
     .section {
-        padding-top: 70px;  /* Padding adjustments for small screens */
+        padding-top: 70px;  
     }
     .section-block {
         padding: 70px;
